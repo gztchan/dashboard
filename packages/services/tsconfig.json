@@ -1,0 +1,21 @@
+{
+  "extends": "@providence/typescript-config/base.json",
+  "compilerOptions": {
+    "incremental": false,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "noEmit": false,
+    "paths": {
+      "@providence/services": ["./src/index.ts"],
+      "@providence/services/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.ts"
+  ]
+}
